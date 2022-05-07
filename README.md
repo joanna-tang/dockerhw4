@@ -15,7 +15,9 @@ To run the project successfully, you need to modify 2 files that are used docker
 
 Docker secret uses docker swarn, so before running the project, secrets need to be set up first.  To set up docker secret, use the below command:
 > docker swarn init
+
 > docker secret create root_secret root_secret.txt
+
 > docker secret create hw4_secret hw4_secret.txt
 
 Also, review docker-compose.yml file to change any configuration as you see fit.
