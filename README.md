@@ -4,12 +4,14 @@
 ![image](https://user-images.githubusercontent.com/101609196/167264745-0967d6c0-7437-4416-b9cf-e3fdd4aaa416.png)
 
 Below is the resulting page when the docker-compose project is running:
-![image](https://user-images.githubusercontent.com/101609196/167264798-9511a6c0-1e8a-4fab-b41f-f7e68508b7df.png)
+![image](https://user-images.githubusercontent.com/101609196/167275028-345fcf7c-2782-4e31-a0be-4663669c52bf.png)
+
 
 This project is developed using Visual Studio 2019, with python 3.10.4 and flask for the web tier.
 Backend is using mysql and redis.
 here's some setting I added for this project
 ![image](https://user-images.githubusercontent.com/101609196/167274927-31e222de-fb97-42ad-aa87-df130eeebad3.png)
+
 ![image](https://user-images.githubusercontent.com/101609196/167274932-475f0525-fe49-42f4-8ce1-39a949725177.png)
 
 
