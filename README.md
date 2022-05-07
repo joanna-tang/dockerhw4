@@ -27,6 +27,8 @@ Docker secret uses docker swarn, so before running the project, secrets need to 
 
 > docker secret create hw4_secret hw4_secret.txt
 
+![image](https://user-images.githubusercontent.com/101609196/167275379-5c64c70b-4519-47a5-9ad1-027519e6e6ca.png)
+
 Also, review docker-compose.yml file to change any configuration as you see fit.
 
 To build the project, use the below command:
