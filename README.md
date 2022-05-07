@@ -35,4 +35,7 @@ To build the project, use the below command:
 To start the project, use the below command:
 >docker-compose up -d
 
-open browser to http://localhost:5000 and have fun!
+When the project is up, they should look like this:
+![image](https://user-images.githubusercontent.com/101609196/167275218-a5d9d0c6-b82d-4df8-be0c-149808295791.png)
+
+Open browser to http://localhost:5000 and have fun!
