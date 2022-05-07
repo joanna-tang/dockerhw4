@@ -13,7 +13,7 @@ import os
 redis_host = os.environ.get('REDIS_HOST', "localhost")  
 redis_port = int( os.environ.get('REDIS_PORT', 6379) )
 # mysql server data
-mysql_host = os.environ.get('MYSQL_HOST', "ms-surface")
+mysql_host = os.environ.get('MYSQL_HOST', "localhost")
 mysql_port = int( os.environ.get('MYSQL_PORT', 3306) )
 mysql_user = os.environ.get('MYSQL_USER', "hw4app")
 mysql_pwd = os.environ.get('MYSQL_PASSWORD', "dockerhw4")
