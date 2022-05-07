@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% block title %}hw 4{% endblock %}
+
+{% block content %}
+        <main>
+            <content>
+                <form action="#" method="POST">
+                    <table>
+                        <thead>
+                            <tr>
+                                <td colspan="2" align="center">
+                                    <h1>Docker Project</h1>
+                                </td>
+                            </tr>
+                        </thead>
+                        <tr>
+                            <td><label>Name :</label></td>
+                            <td><input type="text" name="username" placeholder="Please enter your name" value="{{username if username}}" required maxlength="30"/></td>
+                        </tr>
+                        <tr>
+                            <td><label>Email :</label></td>
+                            <td><input type="email" name="email" placeholder="Please enter your email" value="{{email if email}}" required maxlength="50"/></td>
+                        </tr>
+                        <tr>
+                            <td><label>Password :</label></td>
+                            <td><input type="password" name="pwd" placeholder="Please enter a password" required/></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="submit" name="sql" value="Save to SQL" />
+                            </td>
+                            <td>
+                                <input type="submit" name="cache" value="Save to Cache" />
+                            </td>
+                        </tr>
+                    </table>
+                    {% with messages = get_flashed_messages() %}
+                        {% if messages %}   
+                            {% for msg in messages %}
+                                <p>{{msg}}</p>
+                            {% endfor %}
+                        {% endif %}
+                    {% endwith %}
+                    <p>
+                        Item stored in SQL: <b>{{sqlcount}} </b><br />
+                        Item stored in Cache: <b>{{cachecount}}</b> <br />
+                    </p>
+                </form>
+            </content>
+        </main>
+{% endblock  %}

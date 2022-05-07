@@ -1,0 +1,59 @@
+services:
+  web:
+     image: python:3.10-alpine
+     container_name: hw4app
+     build: .
+     restart: always
+     ports:
+        - 5000:5000
+     environment:
+        REDIS_HOST: redis
+        REDIS_PORT: 6379
+        MYSQL_HOST: mysql
+        MYSQL_PORT: 3306
+        MYSQL_USER: hw4app
+        MYSQL_PASSWORD: dockerhw4  #replace?
+        #MYSQL_PASSWORD: /run/secrets/hw4_secret
+        MYSQL_DB: hw4_db
+        SERVER_PORT: 5000
+        BIND: 0.0.0.0
+     secrets:
+        - hw4_secret
+     depends_on:
+        - redis
+        - db
+
+  redis:
+    image: redis:alpine
+    container_name: redis
+    restart: always
+    ports:
+      - "6379:6379"
+    command:
+      redis-server
+
+
+  db:
+    image: mysql:latest
+    container_name: mysql
+    restart: always
+#    volumes:
+#      - .:/docker-entrypoint-initdb.d
+    ports:
+      - "3306:3306"
+    environment:
+       MYSQL_ROOT_PASSWORD:  #replace?
+       MYSQL_ROOT_PASSWORD: /run/secrets/root_secret
+       MYSQL_DATABASE: hw4_db
+       MYSQL_USER: hw4app
+       #MYSQL_PASSWORD:  #replace?
+       MYSQL_PASSWORD: /run/secrets/hw4_secret
+    secrets:
+      - root_secret
+      - hw4_secret
+
+secrets:
+  root_secret:
+    file: ./root_secret.txt
+  hw4_secret:
+    file: ./hw4_secret.txt

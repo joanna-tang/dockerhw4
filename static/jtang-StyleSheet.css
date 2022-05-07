@@ -1,0 +1,283 @@
+﻿/* phone screen css */
+@media screen and (max-width: 500px) {
+    header div {
+        font-size: x-large;
+    }
+    nav {
+        min-height: 10px;
+        padding-top: 10px;
+    }
+    .menu {
+        display: inline-block;
+        padding-left: 10px;
+    }
+    #container {
+        flex-direction: column;
+    }
+    label {
+        width: 200px;
+        display: inline-block;
+        text-align: left;
+        margin-left: 10px;
+    }
+    input[type=text], input[type=email], input[type=password], select, input[type=date], textarea {
+        width: 200px;
+        margin-left: 10px;
+    }
+    .column {
+        width: 50%;
+    }
+    h1 {
+        font-size: 120%;
+    }
+    h3 {
+        font-size: 90%;
+    }
+    input[type = submit] {
+        width: 200px;
+        padding: 15px;
+        margin: 10px;
+    }
+    input[type=reset] {
+        width: 200px;
+        padding: 10px;
+        margin: 10px;
+    }
+}
+/* desktop css */
+
+@media (min-width: 500px) {
+    .column {
+        width: 100%;
+    }
+    header div {
+        font-size: xx-large;
+    }
+    #container {
+        flex-direction: row;
+    }
+    main {
+        min-width: 550px;
+    }
+
+    nav {
+        flex: 0 1 10%;
+        line-height: 40px;
+        padding: 10px;
+        min-height: 500px;
+        min-width: 120px;
+    }
+
+    label {
+        width: 250px;
+        text-align: right;
+        margin-right: 8px;
+    }
+
+    input[type=text], input[type=email], input[type=password], select, input[type=date], textarea {
+        width: 250px;
+        margin: 6px 0;
+    }
+
+    input[type = submit] {
+        width: 200px;
+        padding: 15px;
+        margin: 10px 50px;
+    }
+    input[type=reset] {
+        width: 220px;
+        padding: 10px;
+        margin: 6px 0;
+    }
+}
+
+/* main css shared */
+    body {
+        background-color: beige;
+        font-family: Arial, sans-serif;
+        color: dimgray;
+    }
+
+    header {
+        background-color: lightblue;
+        height: 100px;
+        width: auto;
+    }
+
+        header div {
+            padding-top: 10px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+    #container {
+        display: flex;
+        height: auto;
+        scroll-behavior: auto;
+    }
+
+        #container i {
+            margin-left: -30px;
+            cursor: pointer;
+        }
+
+    .logo {
+        float: left;
+    }
+
+    /*.dog {
+    float: right;
+    padding-left: 10px;
+}*/
+    h1, h3 {
+        padding: 10px;
+    }
+
+        h3 a:link, h3 a:active, h3 a:visited {
+            color: dimgray;
+            text-decoration: underline;
+        }
+
+    .error {
+        color: red;
+    }
+
+    input[type=reset] {
+        border: 1px solid #aaa;
+        border-radius: 4px;
+    }
+
+    /* to prevent edge's default view password feature, use the custom one consistently for all browser */
+    input[type=password]::-ms-reveal,
+    input[type=password]::-ms-clear {
+        display: none;
+    }
+
+    /* to hide safari's password/key icon */
+    input[type=password]::-webkit-credentials-auto-fill-button {
+        margin: 0;
+        width: 0;
+        background-color: transparent;
+    }
+
+    input[type=text], input[type=email], input[type=password], select, input[type=date], textarea {
+        padding: 10px;
+        border: 1px solid #aaa;
+        border-radius: 4px;
+    }
+
+        input[type=text]:focus, input[type=email]:focus, input[type=password]:focus, input[type=date]:focus, textarea:focus, select:hover {
+            background-color: lightblue;
+        }
+
+        select option:checked {
+            background: cadetblue;
+        }
+
+    .requests {
+        margin: 15px;
+        overflow-x: auto;
+    }
+
+    table caption {
+        font-size: x-large;
+        padding: 10px;
+    }
+
+    thead td, tfoot td {
+        background-color: lightblue; /*cadetblue, sandybrown;*/
+        text-wrap: none;
+        padding: 10px;
+    }
+
+    tbody td {
+        padding: 5px;
+    }
+
+    tr:nth-child(even) {
+        background: #CCC;
+        text-wrap: none;
+    }
+
+    tr:nth-child(odd) {
+        background: #FFF;
+        text-wrap: none;
+    }
+
+        tr:nth-child(odd) a:link, tr:nth-child(odd) a:visited, tr:nth-child(odd) a:active,
+        tr:nth-child(even) a:link, tr:nth-child(even) a:visited, tr:nth-child(even) a:active {
+            color: dimgray;
+            text-decoration: underline;
+        }
+
+        tr:nth-child(odd) a:hover, tr:nth-child(even) a:hover {
+            color: blue;
+            text-decoration: underline;
+        }
+
+    input[type = submit] {
+        background-color: cadetblue;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: larger;
+    }
+
+        input[type = submit]:hover {
+            color: yellow;
+            background-color: lightblue;
+        }
+
+    #email {
+        text-transform: lowercase;
+    }
+
+    input.error {
+        border: 2px solid red;
+    }
+
+    label {
+        display: inline-block;
+    }
+
+    main {
+        flex: 0 1 auto;
+    }
+
+    nav {
+        background-color: cadetblue;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+footer {
+    background-color: lightblue;
+    text-align: center;
+    height: 120px;
+    position: fixed;
+    bottom: 0;
+    width: 98%;
+}
+
+        footer h2 {
+            font-size: medium;
+        }
+
+    a:link {
+        color: white;
+    }
+
+    a:visited {
+        color: white;
+    }
+
+    a:hover {
+        color: yellow;
+    }
+
+a:active {
+    color: white;
+}
