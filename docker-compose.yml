@@ -12,8 +12,8 @@ services:
         MYSQL_HOST: mysql
         MYSQL_PORT: 3306
         MYSQL_USER: hw4app
-        MYSQL_PASSWORD: dockerhw4  #replace?
-        #MYSQL_PASSWORD: /run/secrets/hw4_secret
+        #MYSQL_PASSWORD:   #replace?
+        MYSQL_PASSWORD: /run/secrets/hw4_secret
         MYSQL_DB: hw4_db
         SERVER_PORT: 5000
         BIND: 0.0.0.0
