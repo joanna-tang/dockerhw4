@@ -9,7 +9,7 @@ Below is the resulting page when the docker-compose project is running:
 This project is developed using Visual Studio 2019, with python 3.10.4 and flask for the web tier.
 Backend is using mysql and redis.
 
-To run the project successfully, you need to modify 2 files that are used docker secret.
+To run the project successfully, you need to first modify 2 files that are used by docker secret.
 1) root_secret.txt   <- use this to store the root password for your mysql instance
 2) hw4_secret.txt    <- use this to store the hw4app user password for your mysql instance
 
