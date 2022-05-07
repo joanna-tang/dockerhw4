@@ -8,6 +8,10 @@ Below is the resulting page when the docker-compose project is running:
 
 This project is developed using Visual Studio 2019, with python 3.10.4 and flask for the web tier.
 Backend is using mysql and redis.
+here's some setting I added for this project
+![image](https://user-images.githubusercontent.com/101609196/167274927-31e222de-fb97-42ad-aa87-df130eeebad3.png)
+![image](https://user-images.githubusercontent.com/101609196/167274932-475f0525-fe49-42f4-8ce1-39a949725177.png)
+
 
 To run the project successfully, you need to first modify 2 files that are used by docker secret.
 1) root_secret.txt   <- use this to store the root password for your mysql instance
