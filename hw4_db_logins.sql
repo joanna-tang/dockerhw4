@@ -1,3 +1,11 @@
+create database hw4_db;
+
+CREATE USER 'hw4app'@'%' identified by 'dockerhw4';
+
+GRANT CREATE, ALTER, DROP, INSERT, UPDATE, SELECT, execute  on hw4_db.* TO 'hw4app'@'%' WITH GRANT OPTION;
+
+use hw4_db;
+
 CREATE TABLE `logins` (
   `uId` int NOT NULL AUTO_INCREMENT,
   `username` varchar(30) DEFAULT '',
