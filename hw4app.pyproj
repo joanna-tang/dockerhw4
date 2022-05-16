@@ -33,9 +33,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\PublishProfiles\registry.hub.docker.com_joannatang76.pubxml" />
-    <Content Include="createtable.sql">
-      <SubType>Code</SubType>
-    </Content>
+    <Content Include="hw4_db_logins.sql" />
+    <Content Include="hw4_db_routines.sql" />
+    <Content Include="README.md" />
     <Content Include="requirements.txt" />
     <Content Include="static\jtang-icon.png" />
     <Content Include="static\jtang-StyleSheet.css" />

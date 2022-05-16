@@ -21,7 +21,7 @@ To run the project successfully, you need to first modify 2 files that are used 
 2) hw4_secret.txt    <- use this to store the hw4app user password for your mysql instance
 
 Docker secret uses docker swarn, so before running the project, secrets need to be set up first.  To set up docker secret, use the below command:
-> docker swarn init
+> docker swarm init
 
 > docker secret create root_secret root_secret.txt
 
