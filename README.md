@@ -37,6 +37,9 @@ To build the project, use the below command:
 To start the project, use the below command:
 >docker-compose up -d
 
+To initialize redis, use the redis-cli and run this command:
+>set count 0
+
 When the project is up, they should look like this:
 ![image](https://user-images.githubusercontent.com/101609196/167275218-a5d9d0c6-b82d-4df8-be0c-149808295791.png)
 
